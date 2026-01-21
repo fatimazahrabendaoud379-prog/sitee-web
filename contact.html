@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Jlaleb Marocaines</title>
+    <style>
+        
+        nav {
+            background-color: #8c3b3b;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            background-color: #f6eee3;
+            text-align: center;
+        }
+        .contact h2 {
+            color: #8c3b3b;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        /* Formulaire */
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .contact form button {
+            background-color: #8c3b3b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact form button:hover {
+            background-color: #a84f4f;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+        @media(max-width:768px){
+            nav { flex-direction: column; }
+            nav ul { flex-direction: column; align-items: center; }
+            nav ul li { margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+
+<nav>
+    <h1>Jlaleb Marocaines</h1>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+<section class="contact">
+    <h2>Contactez-nous</h2>
+    <p>Pour toute question ou commande, veuillez remplir le formulaire ci-dessous :</p>
+
+    <form action="#" method="post">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Votre email">
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..."></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Jlaleb Marocaines - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
